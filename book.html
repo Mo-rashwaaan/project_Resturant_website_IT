@@ -14,23 +14,24 @@
 
     /* NAVBAR */
     nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: #111;
-      color: #fff;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 25px;
-      z-index: 10;
+       width: 100%;
+       background: #111;
+       color: #fff;
+       padding: 5px 20px;
+       position: fixed;
+       top: 0;
+       left: 0;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       flex-wrap: wrap;
+       box-sizing: border-box;
     }
 
     nav a {
       color: #fff;
       text-decoration: none;
-      margin-left: 15px;
+      margin-left: 25px;
       font-size: 14px;
     }
 
@@ -113,7 +114,7 @@
     .row {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 25px;
     }
 
     .col-6 {
@@ -152,10 +153,9 @@
   </style>
 </head>
 <body>
-
-<nav>
+<nav id="Navbar">
   <div class="brand">Our Restaurant</div>
-  <div>
+  <ul>
     <a href="index.html">Home</a>
     <a href="book.html" class="active">Book Slot</a>
     <a href="contact.html">Contact</a>
@@ -233,7 +233,8 @@
             </div>
             <div class="col-12">
               <label>Special Request</label>
-              <textarea rows="2" placeholder="Birthday, anniversary, decoration, etc."></textarea>
+              <textarea rows="2" placeholder="Welcome to our restaurant 
+Please enter the type of food you like."></textarea>
             </div>
             <div class="col-12">
               <button type="submit">Book Slot</button>
