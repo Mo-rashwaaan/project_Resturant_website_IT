@@ -19,17 +19,19 @@
       padding-top: 70px;
     }
 
-    nav {
-      width: 100%;
-      background: #111;
-      padding: 15px 25px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 10;
+     nav {
+       width: 100%;
+       background: #111;
+       color: #fff;
+       padding: 15px 20px;
+       position: fixed;
+       top: 0;
+       left: 0;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       flex-wrap: wrap;
+       box-sizing: border-box;
     }
 
     nav .brand {
@@ -47,8 +49,11 @@
     nav .links a {
       color: #fff;
       text-decoration: none;
-      font-size: 14px;
-      transition: 0.3s;
+      font-size: 15px;
+      transition: 0.2s;
+    }
+    nav a.active {
+      text-decoration: underline;
     }
 
     nav .links a:hover {
@@ -110,7 +115,7 @@
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      font-size: 15px;
+      font-size: 25px;
       transition: 0.3s;
     }
 
@@ -155,6 +160,8 @@
       <a href="BOOK.HTML">Book Slot</a>
       <a href="CONTACT.HTML">Contact</a>
       <a href="about.html">About</a>
+      <a href="Login.html" class="active">Login</a>
+
     </div>
   </nav>
 
